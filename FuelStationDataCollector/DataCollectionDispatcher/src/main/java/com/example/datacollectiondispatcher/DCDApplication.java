@@ -26,6 +26,7 @@ public class DCDApplication {
     public static void main(String[] args) throws IOException, TimeoutException, SQLException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
+        factory.setPort(30003);
         Connection connection = factory.newConnection();
 
         Channel redChannel = connection.createChannel();
