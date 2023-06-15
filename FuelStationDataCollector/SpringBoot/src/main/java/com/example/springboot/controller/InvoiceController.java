@@ -28,6 +28,7 @@ public class InvoiceController {
         // DONE: Starts the process by sending a start message with the customer ID to the Data Collection Dispatcher
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
+        factory.setPort(30003);
 
         try (
                 Connection connection = factory.newConnection();
