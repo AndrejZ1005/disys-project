@@ -1,5 +1,6 @@
 package com.example.javafx;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
@@ -17,6 +18,15 @@ public class JavaFXController {
     private TextField customerId;
     @FXML
     private ListView invoices;
+
+    public void onButtonCancelClicked(ActionEvent actionEvent) {
+        System.exit(-1);
+    }
+    // TODO: Check ID and Generate Invoice on Click
+    public void onButtonCustomerIDClicked(ActionEvent actionEvent) throws IOException, InterruptedException {
+
+        // btnGenerateInvoice();
+    }
 
     @FXML
     private void btnGenerateInvoice() {
