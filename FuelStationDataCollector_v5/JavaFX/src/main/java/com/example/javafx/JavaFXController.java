@@ -27,7 +27,8 @@ public class JavaFXController {
         updateList()
     }
     public void onButtonOpenPDFClicked(ActionEvent actionEvent) throws IOException, InterruptedException {
-     //open the PDF
+      //File pdfFile = new File("my-file.pdf");
+      //Desktop.getDesktop().open(pdfFile);
 
     }
     @FXML
