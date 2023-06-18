@@ -14,6 +14,8 @@ import java.net.http.HttpResponse;
 public class JavaFXController {
     @FXML
     private TextField customerId;
+     @FXML
+    private ListView invoices;
 
     public void onButtonCancelClicked(ActionEvent actionEvent) {
         System.exit(-1);
