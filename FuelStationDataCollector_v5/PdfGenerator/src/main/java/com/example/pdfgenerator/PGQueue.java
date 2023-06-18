@@ -57,8 +57,9 @@ public class PGQueue extends PGDatabase implements Runnable {
                 document.add(new Paragraph("First name: " + firstName, font));
                 document.add(new Paragraph("Last name: " + lastName, font));
                 document.add(new Paragraph("Consumption: " + consumptionSum + " kwh", font));
-                document.add(new Paragraph("Date: test", font));
-                document.add(new Paragraph("Time: test", font));
+                document.add(new Paragraph("Total: " + Integer.valueOf(consumptionSum)* 0.3 + " €", font));
+                document.add(new Paragraph("Date: " + java.time.LocalDate.now(), font));
+                document.add(new Paragraph("Time: "+ java.time.LocalTime.now(), font));
                 document.close();
 
             } catch (InterruptedException | SQLException | DocumentException | FileNotFoundException e) {
