@@ -22,7 +22,7 @@ public class JavaFXController {
     }
 
     public void onButtonCustomerIDClicked(ActionEvent actionEvent) throws IOException, InterruptedException {
-       // btnGenerateInvoice();
+        GenerateInvoice();
 
     }
     public void onButtonOpenPDFClicked(ActionEvent actionEvent) throws IOException, InterruptedException {
@@ -30,7 +30,7 @@ public class JavaFXController {
 
     }
     @FXML
-    private void btnGenerateInvoice() {
+    private void GenerateInvoice() {
         try {
             var request = HttpRequest.newBuilder()
                     .uri(URI.create("http://localhost:8080/api/v1/invoices/" + customerId.getText()))
