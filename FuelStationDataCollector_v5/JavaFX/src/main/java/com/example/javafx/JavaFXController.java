@@ -2,6 +2,7 @@ package com.example.javafx;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
@@ -23,7 +24,7 @@ public class JavaFXController {
 
     public void onButtonCustomerIDClicked(ActionEvent actionEvent) throws IOException, InterruptedException {
         GenerateInvoice();
-
+        updateList()
     }
     public void onButtonOpenPDFClicked(ActionEvent actionEvent) throws IOException, InterruptedException {
      //open the PDF
